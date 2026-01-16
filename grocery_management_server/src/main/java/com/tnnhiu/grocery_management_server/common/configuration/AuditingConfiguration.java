@@ -1,9 +1,9 @@
-package com.gm.grocery_management_server.common.config;
+package com.tnnhiu.grocery_management_server.common.configuration;
 
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.stereotype.Component;
 
 @Component
 @EnableJpaAuditing
-public class AuditingConfig {
+public class AuditingConfiguration {
 }

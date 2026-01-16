@@ -1,4 +1,4 @@
-package com.gm.grocery_management_server;
+package com.tnnhiu.grocery_management_server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

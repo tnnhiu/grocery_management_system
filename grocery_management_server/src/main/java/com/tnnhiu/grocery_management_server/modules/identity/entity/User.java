@@ -1,6 +1,6 @@
-package com.gm.grocery_management_server.modules.identity.entity;
+package com.tnnhiu.grocery_management_server.modules.identity.entity;
 
-import com.gm.grocery_management_server.common.entity.BaseEntity;
+import com.tnnhiu.grocery_management_server.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

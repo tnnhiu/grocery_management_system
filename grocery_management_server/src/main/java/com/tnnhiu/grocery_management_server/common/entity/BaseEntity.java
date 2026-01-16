@@ -1,4 +1,4 @@
-package com.gm.grocery_management_server.common.entity;
+package com.tnnhiu.grocery_management_server.common.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

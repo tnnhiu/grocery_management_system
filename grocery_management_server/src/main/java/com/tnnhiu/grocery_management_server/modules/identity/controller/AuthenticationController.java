@@ -1,6 +1,5 @@
-package com.gm.grocery_management_server.modules.identity.controller;
+package com.tnnhiu.grocery_management_server.modules.identity.controller;
 
-import org.hibernate.query.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

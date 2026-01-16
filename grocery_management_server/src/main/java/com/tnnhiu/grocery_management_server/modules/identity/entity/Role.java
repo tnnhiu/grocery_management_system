@@ -1,6 +1,6 @@
-package com.gm.grocery_management_server.modules.identity.entity;
+package com.tnnhiu.grocery_management_server.modules.identity.entity;
 
-import com.gm.grocery_management_server.modules.identity.enums.RoleEnum;
+import com.tnnhiu.grocery_management_server.modules.identity.enums.RoleEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
