@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgre_user
+      POSTGRES_PASSWORD: postgre_password
+      POSTGRES_DB: grocery_management_postgre_db
+    volumes:
+      - grocery_pg_data:/var/lib/postgresql
+volumes:
+  grocery_pg_data:
