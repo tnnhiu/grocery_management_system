@@ -1,30 +1,21 @@
 package com.tnnhiu.grocery_management_server.modules.identity.controller;
 
-import com.tnnhiu.grocery_management_server.modules.identity.dto.request.UserCreateRequest;
-import com.tnnhiu.grocery_management_server.modules.identity.dto.response.UserCreateResponse;
-import com.tnnhiu.grocery_management_server.modules.identity.service.UserService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/users")
 public class UserController {
 
-    private final UserService userService;
-
-    // create
-    @PostMapping
-    public ResponseEntity<UserCreateResponse> createUser(
-            @RequestBody @Valid UserCreateRequest request
-    ) {
-        return ResponseEntity.ok(userService.createUser(request));
+    @GetMapping("/greeting")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello World");
     }
+    // create
     // update
     // delete
 }

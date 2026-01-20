@@ -1,10 +1,12 @@
 package com.tnnhiu.grocery_management_server.common.configuration;
 
+
 import com.tnnhiu.grocery_management_server.modules.identity.entity.Role;
 import com.tnnhiu.grocery_management_server.modules.identity.entity.User;
 import com.tnnhiu.grocery_management_server.modules.identity.enums.RoleEnum;
 import com.tnnhiu.grocery_management_server.modules.identity.repository.RoleRepository;
 import com.tnnhiu.grocery_management_server.modules.identity.repository.UserRepository;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;

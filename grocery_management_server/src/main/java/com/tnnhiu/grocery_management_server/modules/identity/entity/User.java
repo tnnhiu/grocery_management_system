@@ -1,8 +1,11 @@
 package com.tnnhiu.grocery_management_server.modules.identity.entity;
 
+
+
 import com.tnnhiu.grocery_management_server.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -23,6 +26,7 @@ public class User extends BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
+    @NotNull
     @NotBlank
     @Size(min = 4, max = 50)
     @Pattern(regexp = "^[a-z0-9]+$")

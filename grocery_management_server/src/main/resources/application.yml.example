@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: grocery_management_server
+  mvc:
+    problem-details:
+      enabled: true
+
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret-key:
+  access-token-expiration: 3600 # 1 hour in seconds
+  refresh-token-expiration: 2592000 # 30 days in seconds

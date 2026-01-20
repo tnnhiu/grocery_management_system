@@ -1,13 +1,16 @@
 services:
-  postgres:
-    image: postgres:latest
+  mysql:
+    image: mysql:latest
     ports:
-      - "5432:5432"
+      - "3306:3306"
     environment:
-      POSTGRES_USER: postgre_user
-      POSTGRES_PASSWORD: postgre_password
-      POSTGRES_DB: grocery_management_postgre_db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: grocery_management_mysql_db
     volumes:
-      - grocery_pg_data:/var/lib/postgresql
+      - grocery_management_data:/var/lib/mysql
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
 volumes:
-  grocery_pg_data:
+  grocery_management_data:
